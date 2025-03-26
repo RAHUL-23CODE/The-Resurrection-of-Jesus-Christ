@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus's Resurrection - Biblical Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-cross"></i>
+            <span>Biblical Journeys</span>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#introduction" class="nav-link">Home</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#timeline" class="nav-link">Timeline</a></li>
+            <li><a href="#video-section" class="nav-link">Videos</a></li>
+            <li><a href="#map-section" class="nav-link">Map</a></li>
+            <li><a href="#vr-experience" class="nav-link">VR Experience</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-sun light-icon"></i>
+            <i class="fas fa-moon dark-icon"></i>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1 class="animated-text">The Resurrection of Jesus Christ</h1>
+            <p class="subtitle">"He is not here; for He is risen, as He said." - Matthew 28:6</p>
+            <div class="cta-buttons">
+                <button class="cta-button primary" id="exploreBtn">Explore Journey</button>
+                <button class="cta-button secondary" id="audioGuideBtn"><i class="fas fa-headphones"></i> Audio Guide</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Scroll Down</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="introduction" class="introduction">
+            <h2 class="section-title">The Miracle of Resurrection</h2>
+            <p>The resurrection of Jesus Christ is the cornerstone of Christian faith, commemorating His victory over death three days after His crucifixion.</p>
+            <div class="scripture-quote">
+                <i class="fas fa-quote-left"></i>
+                <blockquote>
+                    "Why do you look for the living among the dead? He is not here; he has risen! Remember how he told you, while he was still with you in Galilee: 'The Son of Man must be delivered over to the hands of sinners, be crucified and on the third day be raised again.'"
+                </blockquote>
+                <cite>- Luke 24:5-7</cite>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2 class="section-title">Biblical Imagery</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tomb">The Tomb</button>
+                <button class="filter-btn" data-filter="appearances">Appearances</button>
+                <button class="filter-btn" data-filter="ascension">Ascension</button>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item" data-category="tomb">
+                    <div class="card-3d">
+                        <img src="https://images.unsplash.com/photo-1584363557727-44bc5c2b2fdd" alt="Empty Tomb" class="image" loading="lazy">
+                        <div class="caption">The Empty Tomb</div>
+                        <div class="card-details">
+                            <h3>The Empty Tomb</h3>
+                            <p>After Jesus was crucified, His body was placed in a tomb. Three days later, the tomb was found empty, as Jesus had risen.</p>
+                            <a href="#" class="read-more">Read in Scripture <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tomb">
+                    <div class="card-3d">
+                        <img src="https://images.unsplash.com/photo-1584795169067-8da5ff5fc0d4" alt="Angel at the Tomb" class="image" loading="lazy">
+                        <div class="caption">Angel at the Tomb</div>
+                        <div class="card-details">
+                            <h3>Angel at the Tomb</h3>
+                            <p>An angel appeared at the tomb to announce that Jesus had risen, as He had promised.</p>
+                            <a href="#" class="read-more">Read in Scripture <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="appearances">
+                    <div class="card-3d">
+                        <img src="https://images.unsplash.com/photo-1545932248-9f407e6fca75" alt="Jesus Appears to Mary Magdalene" class="image" loading="lazy">
+                        <div class="caption">Jesus Appears to Mary Magdalene</div>
+                        <div class="card-details">
+                            <h3>Jesus Appears to Mary Magdalene</h3>
+                            <p>Mary Magdalene was the first person to see Jesus after His resurrection. At first, she didn't recognize Him.</p>
+                            <a href="#" class="read-more">Read in Scripture <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="appearances">
+                    <div class="card-3d">
+                        <img src="https://images.unsplash.com/photo-1558864559-ed673ba3610b" alt="Road to Emmaus" class="image" loading="lazy">
+                        <div class="caption">Road to Emmaus</div>
+                        <div class="card-details">
+                            <h3>Road to Emmaus</h3>
+                            <p>Jesus appeared to two disciples on the road to Emmaus, but they didn't recognize Him until He broke bread with them.</p>
+                            <a href="#" class="read-more">Read in Scripture <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="appearances">
+                    <div class="card-3d">
+                        <img src="https://images.unsplash.com/photo-1582662090687-797e6c5e7e3f" alt="Doubting Thomas" class="image" loading="lazy">
+                        <div class="caption">Doubting Thomas</div>
+                        <div class="card-details">
+                            <h3>Doubting Thomas</h3>
+                            <p>Thomas doubted that Jesus had risen until he saw Him with his own eyes and touched His wounds.</p>
+                            <a href="#" class="read-more">Read in Scripture <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="ascension">
+                    <div class="card-3d">
+                        <img src="https://images.unsplash.com/photo-1565429806668-bc95035f846d" alt="Ascension" class="image" loading="lazy">
+                        <div class="caption">The Ascension</div>
+                        <div class="card-details">
+                            <h3>The Ascension</h3>
+                            <p>Forty days after His resurrection, Jesus ascended into heaven in the presence of His disciples.</p>
+                            <a href="#" class="read-more">Read in Scripture <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline">
+            <h2 class="section-title">The Resurrection Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline-item" data-aos="fade-right">
+                    <span class="timeline-date">Day 1</span>
+                    <h3>Good Friday</h3>
+                    <p>Jesus is crucified at Golgotha.</p>
+                    <div class="timeline-icon"><i class="fas fa-cross"></i></div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <span class="timeline-date">Day 3</span>
+                    <h3>Easter Sunday - Morning</h3>
+                    <p>Women discover the empty tomb. Angels announce that Jesus has risen.</p>
+                    <div class="timeline-icon"><i class="fas fa-tomb"></i></div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <span class="timeline-date">Day 3</span>
+                    <h3>Easter Sunday - Afternoon</h3>
+                    <p>Jesus appears to the disciples on the road to Emmaus.</p>
+                    <div class="timeline-icon"><i class="fas fa-road"></i></div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <span class="timeline-date">Day 3</span>
+                    <h3>Easter Sunday - Evening</h3>
+                    <p>Jesus appears to the disciples in the Upper Room.</p>
+                    <div class="timeline-icon"><i class="fas fa-door-open"></i></div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <span class="timeline-date">Day 10</span>
+                    <h3>One Week Later</h3>
+                    <p>Jesus appears again to the disciples, including Thomas who doubted.</p>
+                    <div class="timeline-icon"><i class="fas fa-question"></i></div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <span class="timeline-date">Day 43</span>
+                    <h3>40 Days After Resurrection</h3>
+                    <p>Jesus ascends to heaven from the Mount of Olives.</p>
+                    <div class="timeline-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                </div>
+            </div>
+            <div class="timeline-controls">
+                <button class="timeline-nav prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="timeline-nav next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+        
+        <!-- Interactive Map Section -->
+        <section id="map-section" class="map-section">
+            <h2 class="section-title">Journey of Resurrection</h2>
+            <div class="map-container">
+                <div id="map" class="interactive-map"></div>
+                <div class="map-sidebar">
+                    <h3>Key Locations</h3>
+                    <ul class="location-list">
+                        <li data-location="golgotha" class="active">Golgotha - Crucifixion Site</li>
+                        <li data-location="tomb">Garden Tomb</li>
+                        <li data-location="emmaus">Road to Emmaus</li>
+                        <li data-location="upperRoom">Upper Room</li>
+                        <li data-location="galilee">Sea of Galilee</li>
+                        <li data-location="olives">Mount of Olives - Ascension</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 3D/VR Experience Section -->
+    <section id="vr-experience" class="vr-experience">
+        <h2 class="section-title">Virtual Reality Experience</h2>
+        <p class="vr-description">Step into the biblical world and witness the resurrection story in immersive 3D.</p>
+        <div class="vr-container">
+            <div class="vr-preview">
+                <img src="https://images.unsplash.com/photo-1626379953822-baec19c3accd" alt="VR Experience Preview" class="vr-image">
+                <button class="vr-button"><i class="fas fa-vr-cardboard"></i> Launch VR Experience</button>
+            </div>
+            <div class="vr-features">
+                <div class="vr-feature">
+                    <i class="fas fa-street-view"></i>
+                    <h3>Walk Through Jerusalem</h3>
+                    <p>Experience the streets as they were in 33 AD</p>
+                </div>
+                <div class="vr-feature">
+                    <i class="fas fa-eye"></i>
+                    <h3>Witness Key Events</h3>
+                    <p>Be present at crucial moments of the resurrection story</p>
+                </div>
+                <div class="vr-feature">
+                    <i class="fas fa-volume-up"></i>
+                    <h3>Audio Narration</h3>
+                    <p>Learn with detailed scriptural explanations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video-section" class="video-section">
+        <h2 class="section-title">Experience the Resurrection Story</h2>
+        <div class="video-tabs">
+            <button class="tab-btn active" data-tab="documentary">Documentary</button>
+            <button class="tab-btn" data-tab="animation">Animation</button>
+            <button class="tab-btn" data-tab="biblical">Cinematic</button>
+        </div>
+        <div class="video-container">
+            <div class="video-player active" data-tab-content="documentary">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PLACEHOLDER1" title="The Resurrection of Jesus - Documentary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-player" data-tab-content="animation">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PLACEHOLDER2" title="The Resurrection of Jesus - Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-player" data-tab-content="biblical">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PLACEHOLDER3" title="The Resurrection of Jesus - Cinematic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="note">Note: Replace PLACEHOLDER1, PLACEHOLDER2, and PLACEHOLDER3 with appropriate YouTube video IDs.</p>
+        </div>
+    </section>
+
+    <!-- Audio Bible Section -->
+    <section class="audio-bible">
+        <h2 class="section-title">Listen to the Scripture</h2>
+        <div class="audio-player">
+            <div class="audio-controls">
+                <select id="audioPassage" class="audio-select">
+                    <option value="matthew">Matthew 28:1-20</option>
+                    <option value="mark">Mark 16:1-20</option>
+                    <option value="luke">Luke 24:1-53</option>
+                    <option value="john">John 20:1-31</option>
+                </select>
+                <div class="player-controls">
+                    <button class="audio-btn" id="playBtn"><i class="fas fa-play"></i></button>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="time">00:00</span>
+                </div>
+            </div>
+            <div class="audio-text">
+                <p id="audioText" class="scripture-text">Select a passage to see the text as you listen...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Sharing and Community -->
+    <section class="community">
+        <h2 class="section-title">Join Our Community</h2>
+        <div class="community-container">
+            <div class="share-section">
+                <h3>Share This Story</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for more biblical content</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Biblical Imagery Gallery</h3>
+                <p>Created for educational and faith purposes</p>
+                <p class="footer-quote">"I am the resurrection and the life. He who believes in Me, though he may die, he shall live." - John 11:25</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#introduction">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#map-section">Interactive Map</a></li>
+                    <li><a href="#vr-experience">VR Experience</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> contact@biblicalgallery.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Biblical Imagery Gallery | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Modern JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
