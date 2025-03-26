@@ -4,6 +4,91 @@ document.addEventListener('DOMContentLoaded', function() {
     document.documentElement.setAttribute('data-theme', savedTheme);
     
     // -------------------------------------
+    // Bible Verse Lookup
+    // -------------------------------------
+    
+    const lookupBtn = document.getElementById('lookupBtn');
+    const bookSelect = document.getElementById('bookSelect');
+    const verseInput = document.getElementById('verseInput');
+    const verseResult = document.getElementById('verseResult');
+    
+    // Sample Bible verses for demonstration
+    const bibleVerses = {
+        matthew: {
+            '28:6': 'He is not here; for He is risen, as He said. Come, see the place where the Lord lay.',
+            '28:5': 'But the angel answered and said to the women, "Do not be afraid, for I know that you seek Jesus who was crucified."',
+            '28:7': 'And go quickly and tell His disciples that He is risen from the dead, and indeed He is going before you into Galilee; there you will see Him. Behold, I have told you."'
+        },
+        mark: {
+            '16:6': 'But he said to them, "Do not be alarmed. You seek Jesus of Nazareth, who was crucified. He is risen! He is not here. See the place where they laid Him."',
+            '16:7': 'But go, tell His disciples—and Peter—that He is going before you into Galilee; there you will see Him, as He said to you."'
+        },
+        luke: {
+            '24:5-6': '"Why do you seek the living among the dead? He is not here, but is risen! Remember how He spoke to you when He was still in Galilee,"',
+            '24:7': 'saying, "The Son of Man must be delivered into the hands of sinful men, and be crucified, and the third day rise again."'
+        },
+        john: {
+            '20:8-9': 'Then the other disciple, who came to the tomb first, went in also; and he saw and believed. For as yet they did not know the Scripture, that He must rise again from the dead.',
+            '20:27': 'Then He said to Thomas, "Reach your finger here, and look at My hands; and reach your hand here, and put it into My side. Do not be unbelieving, but believing."'
+        },
+        acts: {
+            '1:3': 'to whom He also presented Himself alive after His suffering by many infallible proofs, being seen by them during forty days and speaking of the things pertaining to the kingdom of God.',
+            '1:9': 'Now when He had spoken these things, while they watched, He was taken up, and a cloud received Him out of their sight.'
+        },
+        '1corinthians': {
+            '15:4': 'and that He was buried, and that He rose again the third day according to the Scriptures,',
+            '15:20': 'But now Christ is risen from the dead, and has become the firstfruits of those who have fallen asleep.'
+        }
+    };
+    
+    if (lookupBtn && bookSelect && verseInput && verseResult) {
+        lookupBtn.addEventListener('click', function() {
+            const book = bookSelect.value;
+            const verse = verseInput.value.trim();
+            
+            if (verse && bibleVerses[book] && bibleVerses[book][verse]) {
+                verseResult.innerHTML = `<p><span class="verse-highlight">${bookSelect.options[bookSelect.selectedIndex].text} ${verse}</span>: ${bibleVerses[book][verse]}</p>`;
+                
+                // Add animation effect
+                verseResult.style.animation = 'none';
+                setTimeout(() => {
+                    verseResult.style.animation = 'fadeIn 0.5s';
+                }, 10);
+            } else {
+                verseResult.innerHTML = `<p>Verse not found. Please check your reference.</p>`;
+            }
+        });
+        
+        // Handle Enter key press
+        verseInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                lookupBtn.click();
+            }
+        });
+    }
+    
+    // -------------------------------------
+    // Language Selector
+    // -------------------------------------
+    
+    const languageSelect = document.getElementById('languageSelect');
+    
+    if (languageSelect) {
+        // Get saved language or default to English
+        const savedLanguage = localStorage.getItem('language') || 'en';
+        languageSelect.value = savedLanguage;
+        
+        languageSelect.addEventListener('change', function() {
+            const language = this.value;
+            localStorage.setItem('language', language);
+            
+            // In a real application, you would have translations for each language
+            // For this demo, we'll just show an alert
+            alert(`Language changed to ${languageSelect.options[languageSelect.selectedIndex].text}. In a complete implementation, the website content would be translated.`);
+        });
+    }
+    
+    // -------------------------------------
     // Navigation and UI Controls
     // -------------------------------------
     

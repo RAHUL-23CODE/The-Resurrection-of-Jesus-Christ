@@ -34,6 +34,15 @@
             <i class="fas fa-sun light-icon"></i>
             <i class="fas fa-moon dark-icon"></i>
         </div>
+        <div class="language-selector">
+            <select id="languageSelect" class="language-select">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="hi">हिन्दी</option>
+            </select>
+        </div>
     </nav>
 
     <header>
@@ -51,10 +60,45 @@
         </div>
     </header>
 
+    <!-- Creator Banner -->
+    <div class="creator-banner">
+        <div class="creator-info">
+            <div class="creator-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="creator-details">
+                <h3>Created by Atul Pandey</h3>
+                <p>Biblical Imagery Specialist</p>
+                <div class="creator-contact">
+                    <a href="tel:+918601042799"><i class="fas fa-phone-alt"></i> +91 8601042799</a>
+                    <a href="https://wa.me/918601042799"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <section id="introduction" class="introduction">
             <h2 class="section-title">The Miracle of Resurrection</h2>
             <p>The resurrection of Jesus Christ is the cornerstone of Christian faith, commemorating His victory over death three days after His crucifixion.</p>
+            <div class="verse-lookup">
+                <h3>Bible Verse Lookup</h3>
+                <div class="verse-search">
+                    <select id="bookSelect" class="verse-select">
+                        <option value="matthew">Matthew</option>
+                        <option value="mark">Mark</option>
+                        <option value="luke">Luke</option>
+                        <option value="john">John</option>
+                        <option value="acts">Acts</option>
+                        <option value="1corinthians">1 Corinthians</option>
+                    </select>
+                    <input type="text" id="verseInput" placeholder="Chapter:Verse (e.g., 28:6)" class="verse-input">
+                    <button id="lookupBtn" class="verse-btn">Lookup</button>
+                </div>
+                <div id="verseResult" class="verse-result">
+                    <p>Enter a reference to see the verse</p>
+                </div>
+            </div>
             <div class="scripture-quote">
                 <i class="fas fa-quote-left"></i>
                 <blockquote>
@@ -332,12 +376,14 @@
             </div>
             <div class="footer-section contact">
                 <h3>Contact Us</h3>
+                <p><i class="fas fa-user"></i> Atul Pandey</p>
                 <p><i class="fas fa-envelope"></i> contact@biblicalgallery.com</p>
-                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-phone"></i> +91 8601042799</p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: +91 8601042799</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 Biblical Imagery Gallery | All Rights Reserved</p>
+            <p>&copy; 2023 Biblical Imagery Gallery | Created by Atul Pandey | All Rights Reserved</p>
         </div>
     </footer>
 
